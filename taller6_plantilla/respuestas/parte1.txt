@@ -1,32 +1,38 @@
 TALLER 6 - RESPUESTAS PARTE 1
-Integrante A: ___________________________
-Integrante B: ___________________________
-Fecha: __________________________________
+Integrante A: Abdiel Valiente
+Integrante B: Jesús Santos
+FECHA : 23/11/2026
 
 ──────────────────────────────────────────
 1. ¿Qué índice tiene el último elemento de un arreglo de tamaño 5?
 
+<<<<<<< HEAD
 RESPUESTA: Es 4 porque comienza el arreglo en 0 
 
+=======
+RESPUESTA:
+El índice 4. Los arreglos empiezan en 0, así que un arreglo de tamaño 5 tiene los índices 0, 1, 2, 3 y 4. En general, el último índice es length - 1.
+>>>>>>> 0e783674587cd4e073aad0c92b03cf72d971f455
 
 ──────────────────────────────────────────
 2. ¿Qué pasa si intentas acceder a notas[5] en este arreglo? ¿Qué error esperas?
 
+<<<<<<< HEAD
 RESPUESTA: Error porque el arrglo esta definido hasta el numero 4.
 
+=======
+RESPUESTA:
+Como el último índice válido es 4, notas[5] está fuera del rango. El programa compila bien, pero al ejecutarse lanza una excepción ArrayIndexOutOfBoundsException (Index 5 out of bounds for length 5) y se detiene.
+>>>>>>> 0e783674587cd4e073aad0c92b03cf72d971f455
 
 ──────────────────────────────────────────
 3. ¿Por qué se inicializa maximo = notas[0] en vez de maximo = 0?
 
 RESPUESTA:
-
+Porque así el valor inicial es un elemento real del arreglo. Si se inicia en 0 y todas las notas fueran negativas o menores que 0, el máximo nunca se actualizaría y daría 0, que ni siquiera está en el arreglo. Con notas[0] la comparación siempre parte de un dato válido.
 
 ──────────────────────────────────────────
 4. ¿Qué significa (double) antes de suma? ¿Qué pasaría si lo quitas?
 
 RESPUESTA:
-
-
-──────────────────────────────────────────
-MODIFICACIÓN REALIZADA (describe qué cambiaste y cuál fue el resultado):
-
+Es un casteo (conversión de tipo): convierte el valor de suma a double antes de dividir. Si lo quitamos, suma / notas.length sería una división entre enteros y Java descartaría los decimales. Por ejemplo, 17 / 5 daría 3 en vez de 3.4.

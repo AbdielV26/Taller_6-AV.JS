@@ -1,41 +1,34 @@
 TALLER 6 - RESPUESTAS PARTE 4
-Integrante A: ___________________________
-Integrante B: ___________________________
+Integrante A: Abdiel Valiente
+Integrante B: Jesus Santos
 
 ──────────────────────────────────────────
 1. ¿Cuál es la diferencia entre add("valor") y add(1, "valor")?
 
 RESPUESTA:
-
+add("valor") agrega el elemento al final de la lista. add(1, "valor") lo inserta en la posición 1 y desplaza hacia la derecha los elementos que estaban desde esa posición.
 
 ──────────────────────────────────────────
 2. ¿Qué ocurre si intentas hacer ciudades.get(10) en una lista de 5 elementos?
 
 RESPUESTA:
-
+Lanza una IndexOutOfBoundsException (Index 10 out of bounds for length 5), porque la lista solo tiene índices del 0 al 4.
 
 ──────────────────────────────────────────
 3. ¿Por qué usamos ArrayList<Integer> y no ArrayList<int>?
 
 RESPUESTA:
-
+Porque los genéricos de Java solo aceptan objetos, no tipos primitivos como int. Integer es la clase envoltura de int, y Java hace la conversión automática (autoboxing) al agregar o leer valores.
 
 ──────────────────────────────────────────
 4. ¿Cuál es el orden de atención en una cola FIFO?
    ¿Cuál sería el orden en una pila LIFO con addFirst/removeFirst?
 
 RESPUESTA:
-
+En una cola FIFO se atiende en el mismo orden de llegada: el primero que entra es el primero que sale (cliente 1, 2, 3...). En una pila LIFO con addFirst/removeFirst sale primero el último que llegó, así que el orden es el inverso (..., 3, 2, 1).
 
 ──────────────────────────────────────────
 5. ¿Cuándo preferirías usar LinkedList sobre ArrayList y viceversa?
 
 RESPUESTA:
-
-
-──────────────────────────────────────────
-MODIFICACIONES REALIZADAS:
-Sección B (filtro >= 40 + suma):
-
-Sección C (clientes 5 y 6 en cola):
-
+LinkedList cuando se hacen muchas inserciones o eliminaciones al inicio o en medio de la lista, o cuando se usa como cola o pila, porque no hay que desplazar elementos. ArrayList cuando se necesita acceder seguido a elementos por índice, porque el acceso es directo y más rápido.
