@@ -1,33 +1,28 @@
 TALLER 6 - RESPUESTAS PARTE 3
-Integrante A: ___________________________
-Integrante B: ___________________________
-
+Integrante A: Abdiel Valiente
+Integrante B: Jesús Santos
 ──────────────────────────────────────────
 1. ¿Qué contiene productos[0] antes de ejecutar new Producto(...)?
 
 RESPUESTA:
-
+Contiene null. Al crear un arreglo de objetos solo se reserva espacio para las referencias, y todas empiezan en null. El objeto no existe hasta que se ejecuta new Producto(...). Si se intenta usar productos[0].precio antes de eso, ocurre una NullPointerException.
 
 ──────────────────────────────────────────
 2. ¿Qué diferencia hay entre productos[i].precio y productos[i].valorTotal()?
 
 RESPUESTA:
-
+productos[i].precio es un atributo: es un dato guardado en el objeto. productos[i].valorTotal() es un método: ejecuta un cálculo (precio por cantidad) con los valores actuales del objeto y devuelve el resultado.
 
 ──────────────────────────────────────────
 3. Cuando haces masEconomico = productos[i], ¿se copian los datos del objeto
    o solo la referencia? ¿Qué implica eso?
 
 RESPUESTA:
-
+Solo se copia la referencia, no los datos. masEconomico y productos[i] apuntan al mismo objeto en memoria. Implica que si se modifica el objeto desde una de las dos variables, el cambio se ve en la otra, porque es un único objeto.
 
 ──────────────────────────────────────────
 4. Después del descuento, ¿el valorTotalInventario impreso refleja el nuevo
    precio? ¿Por qué?
 
 RESPUESTA:
-
-
-──────────────────────────────────────────
-MODIFICACIÓN REALIZADA (producto agregado y producto con mayor stock afectado):
-
+Depende de cuándo se calculó. Si valorTotalInventario se calculó antes de aplicar el descuento y se guardó en una variable, no refleja el nuevo precio, porque esa variable conserva el valor viejo hasta que se vuelva a calcular. Si se recalcula después del descuento, sí lo refleja, porque usa los precios actualizados. (Confirmar con lo que imprime su programa.)
