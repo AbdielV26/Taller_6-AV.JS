@@ -1,31 +1,27 @@
 TALLER 6 - RESPUESTAS PARTE 2
-Integrante A: ___________________________
-Integrante B: ___________________________
+Integrante A: Abdiel Valiente
+Integrante B: Jesús Santos
 
 ──────────────────────────────────────────
 1. ¿Cómo accedes al valor 88 (Luis en Español) usando índices?
 
 RESPUESTA:
-
+Con dos índices: arreglo[fila][columna]. La fila corresponde al estudiante (Luis) y la columna a la materia (Español). Hay que usar los índices que tengan en su matriz según el orden de la tabla; por ejemplo, si Luis es la segunda fila y Español la segunda columna, sería notas[1][1], porque se cuenta desde 0.
 
 ──────────────────────────────────────────
 2. ¿Cuántos bucles for necesitas para recorrer todos los elementos de un arreglo 2D? ¿Por qué?
 
 RESPUESTA:
-
+Dos bucles for anidados: el exterior recorre las filas y el interior recorre las columnas de cada fila. Cada posición necesita dos índices, y por eso se necesita un bucle por cada dimensión.
 
 ──────────────────────────────────────────
 3. Si agregas un cuarto estudiante, ¿qué línea de código tendrías que cambiar?
 
 RESPUESTA:
-
+La línea donde se declara la matriz, aumentando el número de filas (por ejemplo, de new int[3][3] a new int[4][3]), y agregar los datos del nuevo estudiante. Si los bucles usan length se ajustan solos; si usan un número fijo, también hay que cambiarlo.
 
 ──────────────────────────────────────────
 4. ¿Qué significa String.format("%-12d", valor)? ¿Qué cambia si quitas el -?
 
 RESPUESTA:
-
-
-──────────────────────────────────────────
-MODIFICACIÓN REALIZADA (describe qué cambiaste y el nuevo promedio de columna):
-
+Formatea un número entero (d) para que ocupe un ancho de 12 caracteres, y el signo - alinea el valor a la izquierda, rellenando con espacios a la derecha. Si se quita el -, el valor se alinea a la derecha y los espacios quedan a la izquierda.
