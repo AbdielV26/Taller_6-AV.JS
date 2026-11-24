@@ -6,13 +6,13 @@ Fecha: __________________________________
 ──────────────────────────────────────────
 1. ¿Qué índice tiene el último elemento de un arreglo de tamaño 5?
 
-RESPUESTA:
+RESPUESTA: Es 4 porque comienza el arreglo en 0 
 
 
 ──────────────────────────────────────────
 2. ¿Qué pasa si intentas acceder a notas[5] en este arreglo? ¿Qué error esperas?
 
-RESPUESTA:
+RESPUESTA: Error porque el arrglo esta definido hasta el numero 4.
 
 
 ──────────────────────────────────────────
